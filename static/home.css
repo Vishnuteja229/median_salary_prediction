@@ -1,0 +1,178 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background: url('./cityy.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  backdrop-filter: blur(6px);
+}
+/* Futuristic H1 styling */
+h1 {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #00f2fe;
+  text-shadow: 0 0 10px rgba(0, 242, 254, 0.6);
+  margin-top: 40px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+h2 {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  margin-top: 30px;
+
+  /* Gradient text effect */
+  background: linear-gradient(90deg, #f1f5f5, #f4f4f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Glow effect */
+  text-shadow: 0 0 10px rgba(231, 251, 9, 0.6);
+
+  /* Blinking animation */
+  animation: blinkGlow 2s infinite, pulseText 3s ease-in-out infinite;
+}
+
+/* Blinking glow */
+@keyframes blinkGlow {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(196, 253, 11, 0.6);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(0, 242, 254, 1);
+  }
+}
+
+/* Subtle pulse */
+@keyframes pulseText {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.result-box {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background: rgba(243, 247, 247, 0.1);
+  border: 1px solid #00f2fe;
+  border-radius: 10px;
+  color: #fff;
+  font:bold;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 10px rgba(249, 250, 250, 0.953);
+}
+/* Centered form container */
+form {
+  position: relative;
+  z-index: 1;
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  background: rgba(28, 27, 27, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  color: #fff;
+}
+
+/* Labels and inputs */
+label {
+  display: block;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+}
+
+input[type="number"]::placeholder {
+  color: #ccc;
+}
+
+/* Submit button */
+button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #00f2fe, #4facfe);
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive tweaks */
+@media (max-width: 500px) {
+  form {
+    margin: 50px 20px;
+    padding: 20px;
+  }
+}
+
+h3 {
+  position: relative;
+  z-index: 1;
+  margin-top: 30px;
+  padding: 15px 25px;
+  background: rgba(0, 255, 255, 0.1);
+  border: 1px solid #00f2fe;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+
+h3:hover {
+  transform: scale(1.02);
+}
+p {
+  font-size: 2rem;               /* Large text size */
+  font-weight: 700;              /* Bold */
+  color: #00f2fe;                /* Futuristic neon blue */
+  text-align: center;            /* Centered alignment */
+  margin-top: 10px;
+  letter-spacing: 1px;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  text-shadow: 0 0 8px rgba(0, 242, 254, 0.4); /* Soft glow */
+}
